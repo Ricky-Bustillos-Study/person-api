@@ -35,6 +35,6 @@ public class PersonController {
 
     @GetMapping("/{id}")
     public PersonDTO getById(@PathVariable Long id) throws PersonNotFoundException {
-        return personService.findById(id);
+        return personService.getById(id);
     }
 }
